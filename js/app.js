@@ -40,23 +40,24 @@ class Drumkit{
     start(){
       const interval = (60/this.bpm) * 1000;
       // check if it's playing
-      if(!this.isPlaying){
-      this.isPlaying = setInterval(() =>{
-               this.repeat();
-        }, interval)
+      if(this.isPlaying){
+         // clear the interval
+         clearInterval(this.isPlaying);
+         this.isPlaying = null;
       }else{
-        // clear the interval
-          clearInterval(this.isPlaying);
-          this.isPlaying = null;
+        this.isPlaying = setInterval(() =>{
+          this.repeat();
+   }, interval)
       }
     }
     updateBtn(){
+      // NULL
       if(!this.isPlaying){
         this.playBtn.innerText = 'stop';
         this.playBtn.classList.add = ('active');
       }else{
         this.playBtn.innerText = 'play';
-        this.playBtn.classList.add = ('active');
+        this.playBtn.classList.remove = ('active');
       }
     }
 }
@@ -68,5 +69,6 @@ class Drumkit{
         });
     });
      drumkit.playBtn.addEventListener('click', function (){
+       drumkit.updateBtn();
         drumkit.start();
      });
