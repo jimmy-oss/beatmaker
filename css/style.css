@@ -99,4 +99,11 @@ select{
   font-size: 1rem;
   margin-left: 1rem;
 }
-  
+@keyframes playTrack{
+  from{
+     transform: scale(1);
+  }
+  to{
+   transform: scale(1.2);
+  }
+}
