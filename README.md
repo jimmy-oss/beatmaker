@@ -13,8 +13,8 @@ This project is the beatmaker which aids on musical beats, particularly those in
 # THE AUTHOR &#129409;
  >jimmy-oss
  
-If there is a pending information I can use to improve the project please feel free to email,
-that is jimmynjonge51@gmail.com.
+If there is a pending information I can use to improve the project please feel free to email 😊 
+ that is jimmynjonge51@gmail.com.
 
 # BEHAVIOUR DRIVEN DEVELOPMENT 🎶
  As you Navigate inside in the project you will find active pads that aid in music beats one is able to loop the music<br>
