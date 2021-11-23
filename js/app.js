@@ -88,7 +88,25 @@ class Drumkit{
                   case "0":
                     this.kickAudio.volume = 0;
                     break;
+                    case "1":
+                      this.snareAudio.volume = 0;
+                      break;
+                      case "2":
+                        this.hihatAudio.volume = 0;
+                        break;
             }
+      }else{
+         switch(muteIndex){
+          case "0":
+            this.kickAudio.volume = 1;
+            break;
+            case "1":
+              this.snareAudio.volume = 1;
+              break;
+              case "2":
+                this.hihatAudio.volume = 1;
+                break;
+         }
       }
     }
 }
